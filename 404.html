@@ -50,6 +50,19 @@
       .dark .bg-dot-pattern {
         background-image: radial-gradient(#334155 1px, transparent 1px);
       }
+
+      /* Connection Animation */
+      @keyframes dashScroll {
+        to {
+          stroke-dashoffset: -24;
+        }
+      }
+      
+      .animate-dash {
+        animation: dashScroll 1s linear infinite;
+        /* Ensure animations are smooth */
+        will-change: stroke-dashoffset; 
+      }
     </style>
   <script type="importmap">
 {
@@ -71,5 +84,5 @@
 </head>
   <body class="bg-white text-slate-900 h-dvh w-screen overflow-hidden dark:bg-slate-900 dark:text-slate-100">
     <app-root></app-root>
-  <script src="main-BUWTY2FB.js" type="module"></script></body>
+  <script src="main-PC5FOPBL.js" type="module"></script></body>
 </html>
